@@ -37,9 +37,11 @@ body {
 }
 
 .logo {
+    margin-top: -5px;
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--primary);
+    margin-bottom: -4%;
 }
 
 .nav-links {
@@ -86,7 +88,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .hero-content {
@@ -257,7 +259,7 @@ body {
 }
 
 .footer-section ul li a:hover {
-    color: white;
+    color: rgb(224, 149, 149);
 }
 
 .copyright {
