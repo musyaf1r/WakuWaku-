@@ -1,186 +1,175 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WakuWaku - Best Places to Visit</title>
-    <link rel="stylesheet" href="styel.css" 
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <a herf="index.html" style="text-decoration: none; color: var(--primary); display: flex; align-items: center; margin-top: -2%;">
-            <img src="Asset/image_2025-11-20_085649704-removebg-preview.png" style="width: 85px;" alt="WakuWaku Logo" class="logo-img">
-            WakuWaku!
-        </a>
-      </div>
-      <div class="nav-links">
-        <a onclick="scrollToSection('home')">Home</a>
-        <a onclick="scrollToSection('destinations')">Destinations</a>
-        <a onclick="scrollToSection('hotels')">Hotels</a>
-        <a onclick="scrollToSection('food')">Food</a>
-        <a onclick="scrollToSection('about')">about</a>
-      </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WakuWaku - Best Places to Visit</title>
+    <link rel="stylesheet" href="styel.css" />
+        <link rel="icon" type="image/png" href="Asset/image_2025-11-20_085649704-removebg-preview.png">
+  </head>
+  <body>
+        <nav class="navbar">
+      <div class="logo">
+        <a herf="index.html" style="text-decoration: none; color: var(--primary); display: flex; align-items: center; margin-top: -2%;">
+            <img src="Asset/image_2025-11-20_085649704-removebg-preview.png" style="width: 85px;" alt="WakuWaku Logo" class="logo-img">
+            WakuWaku!
+        </a>
+      </div>
+      <div class="nav-links">
+        <a onclick="scrollToSection('home')">Home</a>
+        <a onclick="scrollToSection('destinations')">Destinations</a>
+        <a onclick="scrollToSection('hotels')">Hotels</a>
+        <a onclick="scrollToSection('food')">Food</a>
+        <a onclick="scrollToSection('about')">about</a>
+      </div>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Discover the Wonders of Japan</h1>
-        <p>
-          Explore the best destinations, hotels, and food experiences in the
-          Land of the Rising Sun
-        </p>
-      </div>
-    </section>
+        <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Discover the Wonders of Japan</h1>
+        <p>
+          Explore the best destinations, hotels, and food experiences in the
+          Land of the Rising Sun
+        </p>
+      </div>
+    </section>
 
-    <!-- Popular Destinations -->
-    <section id="destinations" class="section">
-      <div class="section-title">
-        <h2>Popular Destinations in Japan</h2>
-        <p>Discover the most visited places in Japan</p>
-      </div>
-      <div class="filter-section">
-        <button class="filter-btn active" onclick="filterDestinations('all')">
-          All
-        </button>
-        <button class="filter-btn" onclick="filterDestinations('tokyo')">
-          Tokyo
-        </button>
-        <button class="filter-btn" onclick="filterDestinations('kyoto')">
-          Kyoto
-        </button>
-        <button class="filter-btn" onclick="filterDestinations('osaka')">
-          Osaka
-        </button>
-        <button class="filter-btn" onclick="filterDestinations('hiroshima')">
-          Hiroshima
-        </button>
-      </div>
-      <div class="cards-container" id="destinations-cards">
-        <!-- Cards will be populated by JavaScript -->
-      </div>
-    </section>
+        <section id="destinations" class="section">
+      <div class="section-title">
+        <h2>Popular Destinations in Japan</h2>
+        <p>Discover the most visited places in Japan</p>
+      </div>
+      <div class="filter-section">
+        <button class="filter-btn active" onclick="filterDestinations('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterDestinations('tokyo')">
+          Tokyo
+        </button>
+        <button class="filter-btn" onclick="filterDestinations('kyoto')">
+          Kyoto
+        </button>
+        <button class="filter-btn" onclick="filterDestinations('osaka')">
+          Osaka
+        </button>
+        <button class="filter-btn" onclick="filterDestinations('hiroshima')">
+          Hiroshima
+        </button>
+      </div>
+      <div class="cards-container" id="destinations-cards">
+              </div>
+    </section>
 
-    <!-- Hotels Section -->
-    <section id="hotels" class="section">
-      <div class="section-title">
-        <h2>Best Hotels in Japan</h2>
-        <p>Find your perfect accommodation with great value</p>
-      </div>
-      <div class="filter-section">
-        <button class="filter-btn active" onclick="filterHotels('all')">
-          All
-        </button>
-        <button class="filter-btn" onclick="filterHotels('budget')">
-          Budget
-        </button>
-        <button class="filter-btn" onclick="filterHotels('mid-range')">
-          Mid-Range
-        </button>
-        <button class="filter-btn" onclick="filterHotels('luxury')">
-          Luxury
-        </button>
-      </div>
-      <div class="cards-container" id="hotels-cards">
-        <!-- Cards will be populated by JavaScript -->
-      </div>
-    </section>
+        <section id="hotels" class="section">
+      <div class="section-title">
+        <h2>Best Hotels in Japan</h2>
+        <p>Find your perfect accommodation with great value</p>
+      </div>
+      <div class="filter-section">
+        <button class="filter-btn active" onclick="filterHotels('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterHotels('budget')">
+          Budget
+        </button>
+        <button class="filter-btn" onclick="filterHotels('mid-range')">
+          Mid-Range
+        </button>
+        <button class="filter-btn" onclick="filterHotels('luxury')">
+          Luxury
+        </button>
+      </div>
+      <div class="cards-container" id="hotels-cards">
+              </div>
+    </section>
 
-    <!-- Food Section -->
-    <section id="food" class="section">
-      <div class="section-title">
-        <h2>Popular Japanese Food</h2>
-        <p>Experience traditional and modern Japanese cuisine</p>
-      </div>
-      <div class="filter-section">
-        <button class="filter-btn active" onclick="filterFood('all')">
-          All
-        </button>
-        <button class="filter-btn" onclick="filterFood('traditional')">
-          Traditional
-        </button>
-        <button class="filter-btn" onclick="filterFood('modern')">
-          Modern
-        </button>
-      </div>
-      <div class="cards-container" id="food-cards">
-        <!-- Cards will be populated by JavaScript -->
-      </div>
-    </section>
+        <section id="food" class="section">
+      <div class="section-title">
+        <h2>Popular Japanese Food</h2>
+        <p>Experience traditional and modern Japanese cuisine</p>
+      </div>
+      <div class="filter-section">
+        <button class="filter-btn active" onclick="filterFood('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterFood('traditional')">
+          Traditional
+        </button>
+        <button class="filter-btn" onclick="filterFood('modern')">
+          Modern
+        </button>
+      </div>
+      <div class="cards-container" id="food-cards">
+              </div>
+    </section>
 
-    <!-- Footer -->
-     <section id="about">
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>WakuWaku</h3>
-          <p>
-            Your ultimate guide to exploring the best of Japan's culture, food,
-            and destinations.
-          </p>
-        </div>
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#hotels">Hotels</a></li>
-            <li><a href="#food">Food Guide</a></li>
-            <li><a href="#">Travel Tips</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <ul>
-            <li>
-              <i class="fas fa-envelope"></i
-              ><a
-                href="https://www.instagram.com/htcntk_15/"
-                style="text-decoration: none; color: aliceblue"
-                >@htcntk_15 [AL]</a
-              ><br /><a
-                href="https://www.instagram.com/dzakykaifat/"
-                style="text-decoration: none; color: aliceblue"
-                >@dzakykaifat [AB]</a
-              >
-            </li>
-            <li>
-              <i class="fas fa-phone"
-                ><a
-                  href="https://wa.me/6283130098468"
-                  style="text-decoration: none; color: aliceblue"
-                  >+62 831-3009-8468 [AL]</a
-                ></i
-              ><br /><a
-                href="https://wa.me/6281382424516"
-                style="text-decoration: none; color: aliceblue"
-                >+62 813-8242-4516 [AB]</a
-              >
-            </li>
-            <li>
-              <i class="fas fa-globe"
-                ><a href="https://github.com/musyaf1r" style="text-decoration:none; color: aliceblue;">github.com/musyaf1r</a><br><a href="https://github.com/AKUN08" style="text-decoration:none; color: aliceblue;">github.com/AKUN08</a></i>
-                
-            <li><i class="fas fa-map-marker-alt"></i><a
-                  href="https://maps.app.goo.gl/CN8Dw1dEh1WeLxZW6"
-                  style="text-decoration: none; color: aliceblue"
-                  > SMK Telkom Malang Student</li></a>
-        
-          </ul>
-        </div>
-      </div>
-      <img
-        src="Asset/image_2025-11-20_085649704-removebg-preview.png"
-        alt="WakuWaku Logo"
-        class="footer-logo" style="width: 250px;">
-      <div class="copyright">
-        <p>&copy; 2025 WakuWaku. All rights reserved.</p>
-      </div>
-    </footer>
+         <section id="about">
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>WakuWaku</h3>
+          <p>
+            Your ultimate guide to exploring the best of Japan's culture, food,
+            and destinations.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#food">Food Guide</a></li>
+            <li><a href="#">Travel Tips</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><a
+                href="https://www.instagram.com/htcntk_15/"
+                style="text-decoration: none; color: aliceblue"
+                >@htcntk_15 [AL]</a
+              ><br /><a
+                href="https://www.instagram.com/dzakykaifat/"
+                style="text-decoration: none; color: aliceblue"
+                >@dzakykaifat [AB]</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone"
+                ><a
+                  href="https://wa.me/6283130098468"
+                  style="text-decoration: none; color: aliceblue"
+                  >+62 831-3009-8468 [AL]</a
+                ></i
+              ><br /><a
+                href="https://wa.me/6281382424516"
+                style="text-decoration: none; color: aliceblue"
+                >+62 813-8242-4516 [AB]</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-globe"
+                ><a href="https://github.com/musyaf1r" style="text-decoration:none; color: aliceblue;">github.com/musyaf1r</a><br><a href="https://github.com/AKUN08" style="text-decoration:none; color: aliceblue;">github.com/AKUN08</a></i>
+                
+            <li><i class="fas fa-map-marker-alt"></i><a
+                  href="https://maps.app.goo.gl/CN8Dw1dEh1WeLxZW6"
+                  style="text-decoration: none; color: aliceblue"
+                  > SMK Telkom Malang Student</li></a>
+        
+          </ul>
+        </div>
+      </div>
+      <img
+        src="Asset/image_2025-11-20_085649704-removebg-preview.png"
+        alt="WakuWaku Logo"
+        class="footer-logo" style="width: 250px;">
+      <div class="copyright">
+        <p>© 2025 WakuWaku. All rights reserved.</p>
+      </div>
+    </footer>
 </section>
-    <script src="script.js"></script>
-  </body>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
