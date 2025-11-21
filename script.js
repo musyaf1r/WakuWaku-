@@ -139,7 +139,7 @@ const food = [
         name: "Sushi",
         location: "Tokyo",
         description: "Fresh and expertly prepared sushi, a must-try in Japan.",
-        image: "https://res.cloudinary.com/jnto/image/upload/w_1440,h_900,c_fill,f_auto,fl_lossy,q_60/v1/media/filer_public/47/7f/477f36c3-a329-437d-a571-d75cdaa73a6f/1_5_zv5jq9",
+        image: "https://www.menu-tokyo.jp/tradition/img/sushi.jpg",
         rating: 4.8,
         type: "traditional",
         googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sushi+in+Tokyo"
@@ -290,4 +290,5 @@ document.addEventListener('DOMContentLoaded', function() {
     renderCards('destinations-cards', destinations, 'Destination');
     renderCards('hotels-cards', hotels, 'Hotel');
     renderCards('food-cards', food, 'Food');
+
 });
